@@ -36,9 +36,9 @@
 
 	        var urlData = {
 			method: 'getLoginUrl',
-            api_key: '',
-            v: '1.0',
-            'response_format': 'json'
+		    	api_key: '', //API key
+		    	v: '1.0',
+		    	'response_format': 'json'
 	        }
 
 	        $.ajax({
@@ -58,7 +58,7 @@
 		          
 					var userData = {
 		            method: 'takeAction',
-		            api_key: 'hiasapi',
+		            api_key: '', //API key
 		            v: '1.0',
 		            alert_id: parseInt($('.field-alert-id').text()), 
 		            alert_type: 'action',
